@@ -429,9 +429,7 @@ class Filters:
 
         name = namespace = None
 
-        if not attr.is_nameless and attr.local_name != self.field_name(
-            attr.name, obj.name
-        ):
+        if not attr.is_nameless:
             name = attr.local_name
 
         if parent_namespace != attr.namespace or attr.is_attribute:
